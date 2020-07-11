@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.elearntez.springmvc</groupId>
-  <artifactId>SpringMVC</artifactId>
+  <artifactId>spring-mvc-withwebdotxml</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
 

@@ -1,10 +1,10 @@
 package com.elearntez.springmvc;
 
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 public class HelloController {
@@ -15,5 +15,11 @@ public class HelloController {
 		return "hello";
 	}
 	
+	
+	@RequestMapping(value="/hi",method=RequestMethod.GET)
+	public String sayHi(ModelMap map){
+		map.addAttribute("Message", "Hello MyDear. Welcome to Spring MVC. ");
+		return "hello";
+	}
 
 }
